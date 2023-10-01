@@ -5,7 +5,7 @@ This is an Elixir interface for the https://twelvedata.com API.
 ## Status
 
 - [x] Reference Data
-- [ ] Core Data
+- [x] Core Data
 - [ ] Mutual Funds
 - [ ] Fundamentals
 - [ ] Analysis
