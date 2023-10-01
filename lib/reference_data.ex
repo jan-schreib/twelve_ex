@@ -276,7 +276,12 @@ defmodule TwelveEx.ReferenceData do
   More info at: https://twelvedata.com/docs#earliest-timestamp
   """
   def earliest_timestamp(apikey, symbol, interval, params \\ %{}, opts \\ []) do
-    Http.get(@earliest_timestamp_path, apikey, Map.merge(params, %{symbol: symbol, interval: interval}), opts)
+    Http.get(
+      @earliest_timestamp_path,
+      apikey,
+      Map.merge(params, %{symbol: symbol, interval: interval}),
+      opts
+    )
   end
 
   @doc """
