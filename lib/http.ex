@@ -32,9 +32,10 @@ defmodule Http do
       (@base_path <> path)
       |> URI.new!()
       |> build_uri(params)
+      |> URI.append_query("apikey=" <> apikey)
       |> URI.to_string()
 
-    {:ok, response} = Req.get(uri, auth: {:bearer, apikey})
+    {:ok, response} = Req.get(uri)
 
     if Keyword.get(opts, :debug) do
       Logger.debug(response)
@@ -42,5 +43,4 @@ defmodule Http do
 
     response.body
   end
-
 end

@@ -21,7 +21,8 @@ defmodule TwelveEx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:req, "~> 0.3.11"}
+      {:req, "~> 0.3.11"},
+      {:ex_doc, "~> 0.21", only: :dev, runtime: false}
     ]
   end
 end
