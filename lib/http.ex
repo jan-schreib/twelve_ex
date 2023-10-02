@@ -21,6 +21,7 @@ defmodule Http do
     {:ok, response} = Req.get(uri)
 
     if Keyword.get(opts, :debug) do
+      Logger.debug(uri)
       Logger.debug(response)
     end
 
@@ -35,13 +36,10 @@ defmodule Http do
       |> URI.append_query("apikey=" <> apikey)
       |> URI.to_string()
 
-    if Keyword.get(opts, :debug) do
-      Logger.debug(uri)
-    end
-
     {:ok, response} = Req.get(uri)
 
     if Keyword.get(opts, :debug) do
+      Logger.debug(uri)
       Logger.debug(response)
     end
 

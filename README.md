@@ -7,7 +7,7 @@ This is an Elixir interface for the https://twelvedata.com API.
 - [x] Reference Data
 - [x] Core Data
 - [ ] Mutual Funds
-- [ ] Fundamentals
+- [x] Fundamentals
 - [ ] Analysis
 - [ ] WebSocket
 - [ ] Advenced
