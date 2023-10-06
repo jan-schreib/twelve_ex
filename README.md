@@ -10,7 +10,7 @@ This is an Elixir interface for the https://twelvedata.com API.
 - [x] Fundamentals
 - [ ] Analysis
 - [ ] WebSocket
-- [ ] Advenced
+- [x] Advanced
 - [ ] Technical Indicators
 
 ## Installation
