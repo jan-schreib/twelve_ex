@@ -350,7 +350,7 @@ defmodule TwelveEx.Fundamentals do
   def options_expiration(apikey, params \\ %{}, opts \\ []),
     do: Http.get(@options_epiration_path, apikey, params, opts)
 
-   @doc """
+  @doc """
   This API call returns a listing of all available options contracts for given security. It shows all listed puts, calls, their expiration,
   strike prices, and pricing information for a single underlying asset within a given maturity period.
 
